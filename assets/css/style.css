@@ -130,7 +130,82 @@ ul, ol {
 }
 
 .wide-section {
-  margin: 0 -1em;
+  margin: 0.5em -1em;
+  background: #000;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+.wide-section .wrap {
+  padding: 1em;
+}
+
+.brand {
+  font-size: 3.5em;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 5.7em;
+  line-height: 1.1;
+}
+.brand span {
+  float: left;
+  max-width: 60%;
+}
+.brand .brand-main {
+  color: darkorange;
+}
+.brand .brand-sec {
+  font-size: 0.4em;
+  line-height: 1.1;
+  padding-top: 0.3em;
+  padding-left: 0.3em;
+  color: #555;
+}
+@media (min-width: 35rem) {
+  .brand {
+    font-size: 5.625em;
+  }
+}
+
+.slogan {
+  font-size: 1.2em;
+  line-height: 1.1;
+  color: #555;
+  max-width: 15.7em;
+  margin: 0 auto;
+  font-weight: 100;
+}
+@media (min-width: 35rem) {
+  .slogan {
+    font-size: 1.8em;
+  }
+}
+
+/* NAV */
+.portfolio-nav {
+  background: #333;
+  width: 100%;
+  overflow: hidden;
+  margin: 1em 0;
+  padding: 0;
+}
+.portfolio-nav > li {
+  list-style: none;
+  border-bottom: 1px solid #555;
+}
+.portfolio-nav > li > ul li {
+  display: none;
+}
+@media (min-width: 35rem) {
+  .portfolio-nav > li {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+}
+.portfolio-nav a {
+  display: block;
+  color: #fff;
+  padding: 0 1em;
 }
 
 .styleguide-wrapper {

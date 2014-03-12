@@ -7,3 +7,16 @@ $dark-red: #7E2126;
 @import url(http://fonts.googleapis.com/css?family=Oswald:700,300,400&subset=latin,latin-ext);
 
 $header-font-family: 'Oswald', sans-serif;
+
+
+@mixin bp($point) {
+	@if $point == sm {
+		@media (min-width: 35rem) {
+			@content;
+		}
+	} @elseif $point == md {
+		@media (min-width: 30rem) {
+			@content;
+		}
+	}
+}

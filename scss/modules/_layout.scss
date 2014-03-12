@@ -1,0 +1,61 @@
+.brand {
+	font-size: 3.5em;
+	overflow: hidden;
+	margin: 0 auto;
+	max-width: 5.7em;
+	line-height: 1.1;
+	span {
+		float: left;
+		max-width: 60%;
+	}
+	.brand-main {
+		color: darkorange;
+	}
+	.brand-sec {
+		font-size: 0.4em;
+		line-height: 1.1;
+		padding-top: 0.3em;
+		padding-left: 0.3em;
+		color: #555;
+	}
+	@include bp(sm) {
+		font-size: 5.625em;
+	}
+}
+.slogan {
+	font-size: 1.2em;
+	line-height: 1.1;
+	color: #555;
+	max-width: 15.7em;
+	margin: 0 auto;
+	font-weight: 100;
+	@include bp(sm) {
+		font-size: 1.8em;
+	}
+}
+
+/* NAV */
+.portfolio-nav {
+	background: #333;
+	width: 100%;
+	overflow: hidden;
+	margin: 1em 0;
+	padding: 0;
+	> li {
+		list-style: none;
+		border-bottom: 1px solid #555;
+		> ul li {
+			display: none;
+		}
+		@include bp(sm) {
+			float: left;
+			width: 20%;
+			text-align: center;
+		}
+	}
+	a {
+		display: block;
+		color: #fff;
+		padding: 0 1em;
+	}
+}
