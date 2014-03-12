@@ -54,39 +54,13 @@ module.exports = function(grunt) {
 			}
 		},
 
-		imagemin: { 
-			dynamic: {
-				files: [{
-					expand: true,
-					cwd: 'src/img/',
-					src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
-					dest: 'assets/img/'
-				}]
-			}
-		},
-
-		// Requires stuff I can't get at the moment...
-		// https://github.com/andismith/grunt-responsive-images
-		// responsive_images: {
-		// 	myTask: {
-		// 		options: {
-		// 			sizes: [{
-		// 				width: 320,
-		// 				height: 240
-		// 			},{
-		// 				name: 'large',
-		// 				width: 640
-		// 			},{
-		// 				name: "large",
-		// 				width: 1024,
-		// 				suffix: "_x2",
-		// 				quality: 60
-		// 			}]
-		// 		},
+		// started messing up for whatever reason... not using any longer
+		// imagemin: { 
+		// 	dynamic: {
 		// 		files: [{
 		// 			expand: true,
-		// 			src: ['img/**.{jpg,gif,png}'],
-		// 			cwd: 'src/',
+		// 			cwd: 'src/img/',
+		// 			src: ['*.{png,jpg,gif}'],   // Actual patterns to match
 		// 			dest: 'assets/img/'
 		// 		}]
 		// 	}
@@ -142,13 +116,13 @@ module.exports = function(grunt) {
 	});
 
 	// Default task
-	grunt.registerTask('default', ['sass', 'sitemap', 'assemble', 'imagemin', 'copy', 'uglify']);
+	grunt.registerTask('default', ['sass', 'sitemap', 'assemble', 'copy', 'uglify']);
 
 	grunt.registerTask('scss', ['sass', 'copy:css']);
 	grunt.registerTask('html', ['assemble']);
 	grunt.registerTask('js', ['copy:js']);
 
-	grunt.registerTask('dev', ['connect', 'uglify', 'imagemin', 'sitemap', 'watch']);
+	grunt.registerTask('dev', ['connect', 'uglify', 'sitemap', 'watch']);
 	grunt.registerTask('demo', ['copy:demo', 'assemble:demo']);
 	grunt.registerTask('deploy', ['gh-pages']);
 
