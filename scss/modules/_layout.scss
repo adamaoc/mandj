@@ -79,3 +79,12 @@
 		display: block;
 	}
 }
+
+.interior, .exterior {
+	.interior-section {
+		background: none;
+	}
+	.morebtn {
+		display: none;
+	}
+}

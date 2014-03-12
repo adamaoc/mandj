@@ -254,6 +254,13 @@ ul, ol {
   display: block;
 }
 
+.interior .interior-section, .exterior .interior-section {
+  background: none;
+}
+.interior .morebtn, .exterior .morebtn {
+  display: none;
+}
+
 .styleguide-wrapper {
   text-align: center;
   margin: 0 auto;
