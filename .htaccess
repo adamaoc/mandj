@@ -13,5 +13,8 @@ RewriteRule ^about/$ ./dist/about.html [L]
 RewriteRule ^contact$ ./dist/contact.html [L]
 RewriteRule ^contact/$ ./dist/contact.html [L]
 
+RewriteRule ^sitemap$ ./dist/sitemap.xml [L]
+RewriteRule ^sitemap/$ ./dist/sitemap.xml [L]
+
 RewriteRule ^styleguide$ ./dist/styleguide.html [L]
 RewriteRule ^styleguide/$ ./dist/styleguide.html [L]

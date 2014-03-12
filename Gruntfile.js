@@ -62,6 +62,14 @@ module.exports = function(grunt) {
 			}
 		},
 
+		sitemap: {
+			dist: {
+				siteRoot: 'dist/',
+				homepage: 'http://mandjconstructionremodeling.com'
+			}
+		},
+
+
 		assemble: {
 			options: {
 				flatten: true,
@@ -91,13 +99,13 @@ module.exports = function(grunt) {
 	});
 
 	// Default task
-	grunt.registerTask('default', ['sass', 'assemble', 'copy', 'uglify']);
+	grunt.registerTask('default', ['sass', 'sitemap', 'assemble', 'copy', 'uglify']);
 
 	grunt.registerTask('scss', ['sass', 'copy:css']);
 	grunt.registerTask('html', ['assemble']);
 	grunt.registerTask('js', ['copy:js']);
 
-	grunt.registerTask('dev', ['connect', 'uglify', 'watch']);
+	grunt.registerTask('dev', ['connect', 'uglify', 'sitemap', 'watch']);
 	grunt.registerTask('demo', ['copy:demo', 'assemble:demo']);
 	grunt.registerTask('deploy', ['gh-pages']);
 
