@@ -262,6 +262,66 @@ ul, ol {
   display: none;
 }
 
+.jobs-list {
+  max-width: 18.5em;
+  overflow: hidden;
+  padding: 0;
+  list-style-position: inside;
+  margin: 0 auto;
+}
+.jobs-list h4 {
+  text-align: center;
+}
+.jobs-list li {
+  width: 50%;
+  float: left;
+}
+
+label, input, textarea {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  line-height: 1.3;
+}
+
+label {
+  margin-top: 0.5em;
+}
+
+textarea {
+  height: 10em;
+}
+
+.contactform {
+  max-width: 20em;
+  margin: 1em 0;
+  background: #e1e1e1;
+  padding: 1em;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.button-submit {
+  border: none;
+  float: right;
+  margin-top: 0.5em;
+}
+
+.errormessage {
+  display: none;
+  background: #ff6666;
+  padding: 0.3em 1em;
+  border-radius: 5px;
+  line-height: 1.3;
+  color: #f1f1f1;
+}
+
+.thanks-message {
+  display: none;
+  color: #FF3F00;
+  text-align: center;
+}
+
 .styleguide-wrapper {
   text-align: center;
   margin: 0 auto;

@@ -120,7 +120,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('scss', ['sass', 'copy:css']);
 	grunt.registerTask('html', ['assemble']);
-	grunt.registerTask('js', ['copy:js']);
+	grunt.registerTask('js', ['uglify']);
 
 	grunt.registerTask('dev', ['connect', 'uglify', 'sitemap', 'watch']);
 	grunt.registerTask('demo', ['copy:demo', 'assemble:demo']);
