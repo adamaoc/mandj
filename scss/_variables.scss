@@ -15,7 +15,7 @@ $header-font-family: 'Oswald', sans-serif;
 			@content;
 		}
 	} @elseif $point == md {
-		@media (min-width: 30rem) {
+		@media (min-width: 40rem) {
 			@content;
 		}
 	}

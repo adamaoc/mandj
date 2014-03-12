@@ -1,2 +1,4 @@
 // Main JS file
-// $('h1').hide();
+$(function() {
+    $("img.lazy").lazyload();
+});

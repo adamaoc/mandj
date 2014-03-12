@@ -47,7 +47,7 @@
 		> ul li {
 			display: none;
 		}
-		@include bp(sm) {
+		@include bp(md) {
 			float: left;
 			width: 20%;
 			text-align: center;
@@ -57,5 +57,25 @@
 		display: block;
 		color: #fff;
 		padding: 0 1em;
+	}
+}
+
+/* IMAGE STYLES */
+.img-wrap {
+	border: 5px solid #555;
+	width: 80%;
+	&.center {
+		margin: 0 auto;
+	}
+	@include bp(md) {		
+		&.push-left {
+			margin-left: -3em;
+		}
+	}
+	img {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		display: block;
 	}
 }
