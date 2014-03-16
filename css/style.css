@@ -165,6 +165,10 @@ ul, ol {
   max-width: 14em;
 }
 
+.clearfix {
+  clear: both;
+}
+
 .brand {
   font-size: 3.5em;
   overflow: hidden;
@@ -320,6 +324,30 @@ textarea {
   display: none;
   color: #FF3F00;
   text-align: center;
+}
+
+.two-up {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.two-up .img-wrap {
+  width: 50%;
+  max-width: 50%;
+  float: left;
+  border: 5px solid #333;
+}
+.two-up .img-wrap img.expand {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 100%;
+}
+.two-up figcaption {
+  text-align: center;
+  background: #333;
+  color: #fff;
 }
 
 .styleguide-wrapper {

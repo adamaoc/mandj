@@ -9,18 +9,23 @@ RewriteRule ^/?$ ./dist/index.html [L]
 
 RewriteRule ^about$ ./dist/about.html [L]
 RewriteRule ^about/$ ./dist/about.html [L]
+RewriteRule ^about.html$ ./dist/about.html [L]
 
 RewriteRule ^contact$ ./dist/contact.html [L]
 RewriteRule ^contact/$ ./dist/contact.html [L]
+RewriteRule ^contact.html$ ./dist/contact.html [L]
 
 RewriteRule ^interior$ ./dist/interior.html [L]
 RewriteRule ^interior/$ ./dist/interior.html [L]
+RewriteRule ^interior.html$ ./dist/interior.html [L]
 
 RewriteRule ^exterior$ ./dist/exterior.html [L]
 RewriteRule ^exterior/$ ./dist/exterior.html [L]
+RewriteRule ^exterior.html$ ./dist/exterior.html [L]
 
 RewriteRule ^sitemap$ ./dist/sitemap.xml [L]
 RewriteRule ^sitemap/$ ./dist/sitemap.xml [L]
 
 RewriteRule ^styleguide$ ./dist/styleguide.html [L]
 RewriteRule ^styleguide/$ ./dist/styleguide.html [L]
+RewriteRule ^styleguide.html$ ./dist/styleguide.html [L]
