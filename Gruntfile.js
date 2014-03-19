@@ -93,14 +93,14 @@ module.exports = function(grunt) {
 				layout: 'layout.hbs',
 				layoutdir: 'src/templates/layouts',
 				assets: 'assets',
-				partials: ['src/templates/pages/*.hbs', 'src/templates/parts/*.hbs']
+				partials: ['src/templates/pages/*.hbs', 'src/templates/pages/**/*.hbs', 'src/templates/parts/*.hbs']
 			},
 			demo: {
 				options: {
 					data: ['src/data/*.{json,yml}']
 				},
 				files: {
-					'dist/': ['src/templates/pages/*.hbs']
+					'dist/': ['src/templates/pages/*.hbs', 'src/templates/pages/**/*.hbs']
 				}
 			}
 		},
