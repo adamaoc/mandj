@@ -30,13 +30,6 @@ $(function() {
 		$('.thanks-message').show();
 	}
 
-	// $(".two-up img").click(function(){
-	// 	$(this).toggleClass('expand');
-	// });
-
-	// $('#myModal').reveal();
-	
-	$("a#photo").fancybox();
 });
 
 	
