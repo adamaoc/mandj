@@ -27,20 +27,13 @@ module.exports = function(grunt) {
 				]
 			}
 		},
-
-		sass: {
-			build: {
-				files : [
-					{
-						src : ['**/*.scss', '!**/_*.scss'],
-						cwd : 'scss',
-						dest : 'css',
-						ext : '.css',
-						expand : true
-					}
-				],
-				options : {
-					style : 'expanded'
+		sass: {                              // Task
+			dist: {                            // Target
+				options: {                       // Target options
+					style: 'compressed'
+				},
+				files: {
+					'assets/css/style.css': 'scss/style.scss'
 				}
 			}
 		},
@@ -105,26 +98,16 @@ module.exports = function(grunt) {
 			}
 		},
 
-		copy: {
-			css: {
-				files: [
-					{ expand: true, cwd: './css', src: ['./**/*.*'], dest: 'assets/css' }
-				]
-			}
-		}
-
 	});
 
 	// Default task
-	grunt.registerTask('default', ['sass', 'sitemap', 'assemble', 'copy', 'uglify']);
+	grunt.registerTask('default', ['sass', 'sitemap', 'assemble', 'uglify']);
 
-	grunt.registerTask('scss', ['sass', 'copy:css']);
+	grunt.registerTask('scss', ['sass']);
 	grunt.registerTask('html', ['assemble']);
 	grunt.registerTask('js', ['uglify']);
 
 	grunt.registerTask('dev', ['connect', 'uglify', 'sitemap', 'watch']);
-	grunt.registerTask('demo', ['copy:demo', 'assemble:demo']);
-	grunt.registerTask('deploy', ['gh-pages']);
 
 	grunt.loadNpmTasks('assemble');
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
