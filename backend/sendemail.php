@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email_body = $email_body . "Message: " . $message;
 
         $mail->SetFrom($email, $name);
-        $address = "adamaoc@gmail.com"; // too address
+        $address = "mayerbdom@yahoo.com"; // too address
         $mail->AddAddress($address, "M and J");
         $mail->Subject    = "Testing Contact Form Submission | " . $name;
         $mail->MsgHTML($email_body); 
