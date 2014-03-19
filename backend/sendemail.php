@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SetFrom($email, $name);
         $address = "mayerbdom@yahoo.com"; // too address
         $mail->AddAddress($address, "M and J");
-        $mail->Subject    = "Testing Contact Form Submission | " . $name;
+        $mail->Subject    = "MandJ Contact Form Submission | " . $name;
         $mail->MsgHTML($email_body); 
 
         // if the email is sent successfully, redirect to a thank you page;
