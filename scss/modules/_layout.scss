@@ -160,16 +160,39 @@ textarea {
 		max-width: 50%;
 		float: left;
 		border: 5px solid #333;
-		img.expand {
-			position: absolute;
-			top: 40px;
-			left: 0px;
-			width: 100%;
-		}
 	}
 	figcaption {
 		text-align: center;
 		background: #333;
 		color: #fff;
+	}
+}
+
+.image-gallery {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #333;
+	background: rgba(0,0,0,0.8);
+	text-align: center;
+	overflow: hidden;
+	.close {
+		display: block;
+		background: red;
+		text-align: right;
+		color: #fff;
+		font-weight: bold;
+		width: 800px;
+		margin: 0 auto;
+	}
+	.image {
+		width: 800px;
+		margin: 0 auto;
+		padding: 1em;
+		img {
+			max-width: 100%;
+		}
 	}
 }

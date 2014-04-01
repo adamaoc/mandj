@@ -32,4 +32,20 @@ $(function() {
 
 });
 
+$(function() {
+	$('.two-up .img-wrap img').click(function() {
+		var fullimg = $(this).data('fullimg');
+		var target = $(this);
+		console.log(target);
+		var position = target.offset().top;
+		console.log(position);
+		$('.image-gallery').show().css({"top": position});
+		$('.image-gallery .image').html('<img src="'+fullimg+'" />');
+	});
+
+	$('.close').click(function() {
+		$('.image-gallery').hide();
+	});
+});
+
 	
