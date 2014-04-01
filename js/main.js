@@ -46,6 +46,10 @@ $(function() {
 	$('.close').click(function() {
 		$('.image-gallery').hide();
 	});
+
+	$('.image-gallery .image').click(function() {
+		$('.image-gallery').hide();
+	});
 });
 
 	

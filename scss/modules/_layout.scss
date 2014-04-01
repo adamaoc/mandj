@@ -174,8 +174,8 @@ textarea {
 	top: 0;
 	left: 0;
 	right: 0;
-	background: #333;
-	background: rgba(0,0,0,0.8);
+	/*background: #333;
+	background: rgba(0,0,0,0.8);*/
 	text-align: center;
 	overflow: hidden;
 	.close {
@@ -186,11 +186,13 @@ textarea {
 		font-weight: bold;
 		width: 800px;
 		margin: 0 auto;
+		padding-right: 0.5em; 
 	}
 	.image {
 		width: 800px;
 		margin: 0 auto;
 		padding: 1em;
+		background: #222;
 		img {
 			max-width: 100%;
 		}
