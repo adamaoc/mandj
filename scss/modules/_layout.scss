@@ -1,3 +1,9 @@
+.page-wrap {
+	section {
+		position: relative;
+	}
+}
+
 .brand {
 	font-size: 3.5em;
 	overflow: hidden;
@@ -165,37 +171,5 @@ textarea {
 		text-align: center;
 		background: #333;
 		color: #fff;
-	}
-}
-
-.image-gallery {
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	/*background: #333;
-	background: rgba(0,0,0,0.8);*/
-	text-align: center;
-	overflow: hidden;
-	.close {
-		display: block;
-		background: red;
-		text-align: right;
-		color: #fff;
-		font-weight: bold;
-		max-width: 800px;
-		margin: 0 auto;
-		padding-right: 0.5em; 
-	}
-	.image {
-		width: 100%;
-		max-width: 800px;
-		margin: 0 auto;
-		padding: 1em;
-		background: #222;
-		img {
-			max-width: 100%;
-		}
 	}
 }

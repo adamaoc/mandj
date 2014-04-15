@@ -67,7 +67,7 @@ module.exports = function(grunt) {
 			},
 			my_target: {
 				files: {
-					'assets/js/main.min.js': ['js/jquery.js', 'js/lazyload.js', 'js/main.js']
+					'assets/js/main.min.js': ['js/jquery.js', 'js/lazyload.js', 'js/lightbox.js', 'js/main.js']
 				}
 			}
 		},

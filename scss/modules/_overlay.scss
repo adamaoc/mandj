@@ -1,0 +1,27 @@
+#overlay {
+	background:rgba(255,255,255,0.8);
+	width:100%;
+	min-height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	display:none;
+	text-align:center;
+	padding-bottom: 1em;
+	color: #fff;
+	.close {
+		display: block;
+		color: #333;
+		font-weight: bold;
+		font-size: 1.5em;
+		position: absolute;
+		right: 0.5em;
+		top: 0;
+		cursor: pointer;
+	}
+	img {
+		margin-top: 1em; 
+		max-width: 90%;
+		box-shadow: 1px 3px 8px #333;
+	}
+}
